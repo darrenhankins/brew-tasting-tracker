@@ -17,6 +17,7 @@ router.get('/', function(req, res) {
 
 // get specific beer
 router.get('/:id', function(req, res) {
+  var id = parseInt(id);
   knex('beer')
   .where('id', req.params.id)
   .then((data) => {
@@ -31,7 +32,7 @@ router.get('/edit/:id', function(req, res) {
   knex('beer')
   .where('id', req.params.id)
   .then((data) => {
-    console.log(data);
+    // console.log(data);
 
     // res.render('edit', {data:data});
     res.render('edit', {beer:data[0]});
