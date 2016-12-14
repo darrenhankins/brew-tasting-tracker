@@ -1,8 +1,19 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffca00!important;
 }
 
 a {
   color: #00B7FF;
+}
+
+.container {
+  background-color: #fff!important;
+  padding: 5em;
+
+}
+
+.navbar {
+  padding-left: 10%;
 }

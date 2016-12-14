@@ -1,2 +1,28 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Brew Tasting Tracker</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <!-- <li class="active"></li> -->
+            <li><a href="/">Home</a></li>
+            <li><a href="/"> || </a></li>
+            <li><a href="/new">New</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class="container">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+
+            <h1><i class="fa fa-beer" aria-hidden="true"></i> My Beer List {{title}}</h1>
+            <ul class="list-group">
+                {{#each data}}
+                    <li class="list-group-item"><a href="/{{this.id}}">{{this.name}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</main>
