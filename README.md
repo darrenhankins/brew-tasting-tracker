@@ -1,3 +1,3 @@
 # brew-tasting-tracker
 
-https://git.heroku.com/brew-tasting-tracker.git
+https://brew-tasting-tracker.herokuapp.com/
